@@ -1,16 +1,14 @@
 <%- model_class = Entry -%>
 <div class="page-header">
-  <h1><%=t '.title', :default => model_class.model_name.human.titleize %></h1>
+  <h1><%= @entry.title %></h1>
+  <%= @entry.tag%>
 </div>
 
-<dl class="dl-horizontal">
-  <dt><strong><%= model_class.human_attribute_name(:title) %>:</strong></dt>
-  <dd><%= @entry.title %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:body) %>:</strong></dt>
-  <dd><%= @entry.body %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:tag) %>:</strong></dt>
-  <dd><%= @entry.tag %></dd>
-</dl>
+<div class="row">
+  <div class="col-md-12">
+    <%= simple_format(@entry.body) %>
+  </div>
+</div>
 
 <%= link_to t('.back', :default => t("helpers.links.back")),
               entries_path, :class => 'btn btn-default'  %>
