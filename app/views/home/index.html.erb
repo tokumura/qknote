@@ -8,3 +8,14 @@
   <%= link_to "Login", new_user_session_path, :class => 'navbar-link' %>
 <% end %>
 <p>Find me in app/views/home/index.html.erb</p>
+
+<form action="https://pt01.mul-pay.jp/link/tshop00023288/Multi/Entry" method="post">
+  <input type="hidden" name="ShopID" value="tshop00023288"/>
+  <input type="hidden" name="OrderID" value="order001"/>
+  <input type="hidden" name="Amount" value="5000"/>
+  <input type="hidden" name="DateTime" value="20160602180000"/>
+  <input type="hidden" name="ShopPassString" value="tshop00023288order00150000sm3xf37u20160602180000"/>
+  <input type="hidden" name="RetURL" value="http://localhost:3000/"/>
+  <input type="hidden" name="UseCvs" value="1"/>
+  <input type="submit" value="Buy now">
+</form>
