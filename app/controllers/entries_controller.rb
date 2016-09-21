@@ -4,7 +4,7 @@ class EntriesController < ApplicationController
   # GET /entries
   # GET /entries.json
   def index
-    @entries = Entry.all.order(:id).reverset
+    @entries = Entry.all.order(:id).reverse
   end
 
   # GET /entries/1
