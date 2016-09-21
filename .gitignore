@@ -23,3 +23,10 @@
 .byebug_history
 
 .DS_Store
+.idea/.generators
+.idea/.rakeTasks
+.idea/misc.xml
+.idea/modules.xml
+.idea/qknote.iml
+.idea/vcs.xml
+.idea/workspace.xml
